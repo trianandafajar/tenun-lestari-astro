@@ -176,6 +176,7 @@ export const en: Copy = {
   products: {
     ogSection: 'Collection',
     tabs: 'Tabs',
+    motifAlt: 'Motif detail',
   },
 
   notFound: {
@@ -494,6 +495,8 @@ export const en: Copy = {
         'Fair prices agreed with artisans before weaving begins.',
         'Plastic-free packaging and a lifetime repair service.',
       ],
+      imageAlt:
+        'Illustration of songket cushion covers and a basket-weave runner on a table',
     },
   },
 

@@ -185,6 +185,7 @@ export const id = {
   products: {
     ogSection: 'Koleksi',
     tabs: 'Tab',
+    motifAlt: 'Detail motif',
   },
 
   notFound: {
@@ -505,6 +506,8 @@ export const id = {
         'Harga adil yang disepakati bersama pengrajin sebelum menenun.',
         'Kemasan bebas plastik dan layanan perbaikan seumur pakai.',
       ],
+      imageAlt:
+        'Ilustrasi sarung bantal songket dan pelari meja anyaman di atas meja',
     },
   },
 

@@ -8,7 +8,7 @@ const LOCALE_PREFIXES = ['', '/en'];
 const MARKETING_ROUTES = [
   '/',
   '/products/',
-  '/products/item-a765/',
+  '/products/kain-ikat-nila-senja/',
   '/services/',
   '/blog/',
   '/blog/post-1/',

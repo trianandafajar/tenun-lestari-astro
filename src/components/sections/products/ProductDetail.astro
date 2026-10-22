@@ -187,7 +187,7 @@ const { copy: t } = Astro.locals;
             <Image
               src={product.data.blueprints.first}
               class="h-full w-full object-cover object-center"
-              alt="Blueprint Illustration"
+              alt={`${t.products.motifAlt}: ${product.data.title}`}
               format={'avif'}
             />
           )}
@@ -198,7 +198,7 @@ const { copy: t } = Astro.locals;
             <Image
               src={product.data.blueprints.second}
               class="h-full w-full object-cover object-center"
-              alt="Blueprint Illustration"
+              alt={`${t.products.motifAlt}: ${product.data.title}`}
               format={'avif'}
             />
           )}
