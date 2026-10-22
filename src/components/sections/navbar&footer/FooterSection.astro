@@ -20,7 +20,7 @@ const socialIconClass =
     <div class="grid grid-cols-2 gap-6 md:grid-cols-4 lg:grid-cols-5">
       <div class="col-span-full lg:col-span-1">
         {/* Brand Logo */}
-        <BrandLogo class="h-auto w-32" />
+        <BrandLogo class="h-auto w-44" />
       </div>
       {/* Link sections from the copy table (Ecosystem, Company, …) */}
       {footerSections.map(section => (
@@ -38,7 +38,7 @@ const socialIconClass =
                   {footer.links[link.id]}
                 </a>
                 {link.badge === 'hiring' ? (
-                  <span class="ms-1 inline rounded-lg bg-orange-500 px-2 py-1 text-xs font-bold text-neutral-50">
+                  <span class="ms-1 inline rounded-lg bg-nila-700 px-2 py-1 text-xs font-bold text-neutral-50">
                     {footer.hiringBadge}
                   </span>
                 ) : null}

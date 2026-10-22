@@ -51,7 +51,7 @@ interface PricingSectionProps {
         <h3 class="text-2xl font-bold text-neutral-100 sm:text-3xl">
           {pricing.starterKit.name}
         </h3>
-        <p class="text-indigo-300">{pricing.starterKit.description}</p>
+        <p class="text-nila-300">{pricing.starterKit.description}</p>
       </div>
 
       <div class="mb-4">
@@ -61,7 +61,7 @@ interface PricingSectionProps {
         <span class="text-lg font-bold text-neutral-300">
           {pricing.starterKit.cents}
         </span>
-        <span class="ms-3 text-sm text-indigo-200">
+        <span class="ms-3 text-sm text-nila-200">
           {pricing.starterKit.billingFrequency}
         </span>
       </div>
@@ -78,7 +78,7 @@ interface PricingSectionProps {
       {/* CTA for purchasing the product */}
       <a
         href={pricing.starterKit.purchaseLink}
-        class="block rounded-lg bg-orange-400 px-8 py-3 text-center text-sm font-bold text-neutral-50 ring-orange-300 outline-hidden transition duration-100 hover:bg-orange-500 focus-visible:ring-3 active:bg-orange-500 md:text-base"
+        class="block rounded-lg bg-nila-600 px-8 py-3 text-center text-sm font-bold text-neutral-50 ring-nila-500 outline-hidden transition duration-100 hover:bg-nila-700 focus-visible:ring-3 active:bg-nila-700 md:text-base"
       >
         {pricing.starterKit.purchaseBtnTitle}
       </a>
@@ -90,12 +90,12 @@ interface PricingSectionProps {
           <h3 class="text-2xl font-bold text-neutral-100 sm:text-3xl">
             {pricing.professionalToolbox.name}
           </h3>
-          <p class="text-orange-200">
+          <p class="text-ochre-200">
             {pricing.professionalToolbox.description}
           </p>
         </div>
 
-        <span class="bg-opacity-50 order-first inline-block rounded-full bg-orange-200/60 px-3 py-1 text-center text-xs font-bold tracking-wider text-orange-600 uppercase lg:order-none">
+        <span class="bg-opacity-50 order-first inline-block rounded-full bg-ochre-200/60 px-3 py-1 text-center text-xs font-bold tracking-wider text-nila-800 uppercase lg:order-none">
           {pricing.badge}
         </span>
       </div>
@@ -104,15 +104,15 @@ interface PricingSectionProps {
         <span class="text-6xl font-bold text-neutral-100">
           {pricing.professionalToolbox.price}
         </span>
-        <span class="text-lg font-bold text-orange-100">
+        <span class="text-lg font-bold text-ochre-100">
           {pricing.professionalToolbox.cents}
         </span>
-        <span class="ms-3 text-orange-200">
+        <span class="ms-3 text-ochre-200">
           {pricing.professionalToolbox.billingFrequency}
         </span>
       </div>
       {/* Features list - automatically created by mapping over `features` array */}
-      <ul class="mb-6 space-y-2 text-orange-100">
+      <ul class="mb-6 space-y-2 text-ochre-100">
         {pricing.professionalToolbox.features.map((feature: string) => (
           <li class="flex items-center gap-1.5">
             <Icon name="checkCircle" class="h-5 w-5 shrink-0" />
@@ -124,7 +124,7 @@ interface PricingSectionProps {
       {/* CTA for purchasing the product */}
       <a
         href={pricing.professionalToolbox.purchaseLink}
-        class="bg-opacity-50 block rounded-lg bg-neutral-100 px-8 py-3 text-center text-sm font-bold text-neutral-800 ring-orange-300 outline-hidden transition duration-300 hover:bg-white focus-visible:ring-3 active:bg-neutral-200 md:text-base"
+        class="bg-opacity-50 block rounded-lg bg-neutral-100 px-8 py-3 text-center text-sm font-bold text-neutral-800 ring-nila-500 outline-hidden transition duration-300 hover:bg-white focus-visible:ring-3 active:bg-neutral-200 md:text-base"
       >
         {pricing.professionalToolbox.purchaseBtnTitle}
       </a>

@@ -9,18 +9,17 @@ import Icon from '@components/ui/icons/Icon.astro';
 interface Props {
   title?: string;
   url?: string;
-  /** `orange` (default) or the yellow brand button. */
-  variant?: 'orange' | 'yellow';
+  /** `nila` (default, deep indigo) or the `ochre` accent button. */
+  variant?: 'nila' | 'ochre';
   noArrow?: boolean;
   [attribute: string]: unknown;
 }
 
-const { title, url, variant = 'orange', noArrow, ...rest } = Astro.props;
+const { title, url, variant = 'nila', noArrow, ...rest } = Astro.props;
 
 const variants = {
-  orange:
-    'text-neutral-50 bg-orange-400 hover:bg-orange-500 active:bg-orange-500',
-  yellow: 'text-neutral-800 bg-yellow-400 hover:bg-yellow-500',
+  nila: 'text-neutral-50 bg-nila-600 hover:bg-nila-700 active:bg-nila-700 dark:bg-ochre-400 dark:text-nila-950 dark:hover:bg-ochre-300',
+  ochre: 'text-nila-950 bg-ochre-400 hover:bg-ochre-500',
 };
 
 const classes = [

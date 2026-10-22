@@ -196,7 +196,7 @@ export const en = {
     banner: 'Explore ScrewFast on GitHub',
     hero: {
       title:
-        'Equip Your Projects with <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>',
+        'Equip Your Projects with <span class="text-ochre-600 dark:text-ochre-300">ScrewFast</span>',
       subTitle:
         'Top-quality hardware tools and expert construction services for every project need.',
       primaryBtn: 'Start Exploring',
@@ -218,7 +218,7 @@ export const en = {
     },
     featuresNavs: {
       title:
-        'Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>\'s offerings to perfectly suit your hardware and construction needs.',
+        'Customize <span class="text-ochre-600 dark:text-ochre-300">ScrewFast</span>\'s offerings to perfectly suit your hardware and construction needs.',
       tabs: {
         tools: {
           heading: 'Cutting-Edge Tools',

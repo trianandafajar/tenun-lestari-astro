@@ -17,6 +17,8 @@
     "@astrojs/mdx": "^8.1.0",
     "@astrojs/sitemap": "^3.7.4",
     "@astrojs/starlight": "^0.42.6",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/plus-jakarta-sans": "^5.3.0",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.4.0",
     "clipboard": "^2.0.11",

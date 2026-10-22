@@ -107,7 +107,11 @@ export default defineConfig({
         },
       ],
       disable404Route: true,
-      customCss: ['./src/assets/styles/starlight.css'],
+      customCss: [
+        '@fontsource-variable/fraunces',
+        '@fontsource-variable/plus-jakarta-sans',
+        './src/assets/styles/starlight.css',
+      ],
       favicon: '/favicon.ico',
       components: {
         SiteTitle: './src/components/ui/starlight/SiteTitle.astro',
