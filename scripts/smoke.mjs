@@ -1,8 +1,9 @@
 import { createServer } from 'node:http';
 import { readFile } from 'node:fs/promises';
 import { extname, isAbsolute, relative, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-const DIST = resolve(new URL('../dist/', import.meta.url).pathname);
+const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
 // Marketing routes exist once per locale (src/pages/ = id vs src/pages/en/).
 const LOCALE_PREFIXES = ['', '/en'];
 const MARKETING_ROUTES = [
@@ -11,8 +12,8 @@ const MARKETING_ROUTES = [
   '/products/kain-ikat-nila-senja/',
   '/services/',
   '/blog/',
-  '/blog/post-1/',
-  '/insights/insight-1/',
+  '/blog/pewarna-alami/',
+  '/insights/mode-lambat/',
   '/contact/',
 ];
 const ROUTES = [
@@ -37,8 +38,8 @@ const EXPECTATIONS = {
   '/en/404/': ['<html lang="en"'],
   '/contact/': ['data-demo-form', 'data-demo-status'],
   '/en/contact/': ['data-demo-form', 'data-demo-status'],
-  '/blog/post-1/': ['"@type":"BlogPosting"'],
-  '/en/blog/post-1/': ['"inLanguage":"en-US"'],
+  '/blog/pewarna-alami/': ['"@type":"BlogPosting"'],
+  '/en/blog/pewarna-alami/': ['"inLanguage":"en-US"'],
 };
 
 const MIME = {
