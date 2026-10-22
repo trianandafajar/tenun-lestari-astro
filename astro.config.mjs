@@ -8,7 +8,7 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: 'https://screwfast.uk',
+  site: 'https://tenunlestari.example',
   image: {
     domains: ['images.unsplash.com'],
   },
@@ -34,7 +34,7 @@ export default defineConfig({
       },
     }),
     starlight({
-      title: 'ScrewFast Docs',
+      title: 'Panduan Tenun Lestari',
       // https://github.com/withastro/starlight/blob/main/packages/starlight/CHANGELOG.md
       // If no Astro and Starlight i18n configurations are provided, the built-in default locale is used in Starlight and a matching Astro i18n configuration is generated/used.
       // If only a Starlight i18n configuration is provided, an equivalent Astro i18n configuration is generated/used.
@@ -101,9 +101,9 @@ export default defineConfig({
       ],
       social: [
         {
-          icon: 'github',
-          label: 'GitHub',
-          href: 'https://github.com/mearashadowfax/ScrewFast',
+          icon: 'instagram',
+          label: 'Instagram',
+          href: 'https://www.instagram.com/',
         },
       ],
       disable404Route: true,
@@ -121,14 +121,14 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image',
-            content: 'https://screwfast.uk' + '/social.webp',
+            content: 'https://tenunlestari.example' + '/social.webp',
           },
         },
         {
           tag: 'meta',
           attrs: {
             property: 'twitter:image',
-            content: 'https://screwfast.uk' + '/social.webp',
+            content: 'https://tenunlestari.example' + '/social.webp',
           },
         },
       ],

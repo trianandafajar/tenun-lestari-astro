@@ -7,6 +7,7 @@ import LanguagePicker from '@components/ui/LanguagePicker.astro';
 import NavbarToggle from '@components/ui/buttons/NavbarToggle.astro';
 import { navLinks } from '@data/navigation';
 import { localePath } from '@utils/locale';
+import { SITE } from '@data/constants';
 
 const { locale, copy: t } = Astro.locals;
 ---
@@ -23,7 +24,7 @@ const { locale, copy: t } = Astro.locals;
       <a
         class="flex-none rounded-lg text-xl font-bold ring-zinc-500 outline-hidden focus-visible:ring-3 dark:ring-zinc-200 dark:focus:outline-hidden"
         href={localePath(locale)}
-        aria-label="ScrewFast"
+        aria-label={SITE.title}
       >
         <BrandLogo class="h-auto w-24" />
       </a>

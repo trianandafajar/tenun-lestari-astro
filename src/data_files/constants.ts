@@ -1,14 +1,19 @@
 import ogImageSrc from '@images/social.png';
 
+/**
+ * Brand constants for Tenun Lestari, a fictional Indonesian brand of
+ * handwoven textiles and home goods made with local artisans.
+ */
 export const SITE = {
-  title: 'ScrewFast',
-  tagline: 'Top-quality Hardware Tools',
+  title: 'Tenun Lestari',
+  tagline: 'Kain tenun tangan yang lestari',
   description:
-    'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.',
+    'Tenun Lestari menghadirkan kain tenun tangan, syal, dan dekorasi rumah yang dibuat bersama pengrajin lokal dengan pewarna alami dan upah yang adil.',
   description_short:
-    'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.',
-  url: 'https://screwfast.uk',
-  author: 'Emil Gulamov',
+    'Kain tenun tangan, syal, dan dekorasi rumah dari pengrajin lokal Indonesia.',
+  url: 'https://tenunlestari.example',
+  author: 'Tim Tenun Lestari',
+  email: 'halo@tenunlestari.example',
 };
 
 // Per-locale titles, descriptions and Open Graph text live in `src/copy/`;
