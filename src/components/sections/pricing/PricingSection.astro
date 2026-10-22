@@ -46,7 +46,7 @@ interface PricingSectionProps {
   {/* Contains two main product blocks */}
   <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-0">
     {/* Starter Kit product details */}
-    <div class="w-full rounded-xl bg-gray-800 p-6 sm:w-1/2 sm:rounded-r-none sm:p-8 lg:w-1/3">
+    <div class="w-full rounded-xl bg-nila-900 p-6 ring-1 ring-nila-700 sm:w-1/2 sm:rounded-r-none sm:p-8 lg:w-1/3">
       <div class="mb-4">
         <h3 class="text-2xl font-bold text-neutral-100 sm:text-3xl">
           {pricing.starterKit.name}
@@ -78,13 +78,13 @@ interface PricingSectionProps {
       {/* CTA for purchasing the product */}
       <a
         href={pricing.starterKit.purchaseLink}
-        class="block rounded-lg bg-nila-600 px-8 py-3 text-center text-sm font-bold text-neutral-50 ring-nila-500 outline-hidden transition duration-100 hover:bg-nila-700 focus-visible:ring-3 active:bg-nila-700 md:text-base"
+        class="block rounded-lg bg-ochre-400 px-8 py-3 text-center text-sm font-bold text-nila-950 ring-ochre-300 outline-hidden transition duration-100 hover:bg-ochre-300 focus-visible:ring-3 active:bg-ochre-300 md:text-base"
       >
         {pricing.starterKit.purchaseBtnTitle}
       </a>
     </div>
     {/* Professional Toolbox product details */}
-    <div class="w-full rounded-xl bg-linear-to-tr from-[#FF512F] to-[#F09819] p-6 shadow-xl sm:w-1/2 sm:p-8">
+    <div class="w-full rounded-xl bg-linear-to-tr from-nila-800 via-nila-700 to-ochre-700 p-6 shadow-xl sm:w-1/2 sm:p-8">
       <div class="mb-4 flex flex-col items-start justify-between gap-4 lg:flex-row">
         <div>
           <h3 class="text-2xl font-bold text-neutral-100 sm:text-3xl">

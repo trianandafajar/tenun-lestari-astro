@@ -269,10 +269,6 @@ export const en: Copy = {
         'Illustration of a loom with half-woven ikat cloth and skeins of naturally dyed yarn',
       cta: 'Meet the Partner Artisan Programme',
     },
-    clients: {
-      title: 'Found in Boutiques and Guesthouses',
-      subTitle: 'The logos below are placeholders for demo purposes only.',
-    },
     featuresGeneral: {
       title: 'Values in Every Thread',
       subTitle:
@@ -283,19 +279,19 @@ export const en: Copy = {
       title:
         'Find the <span class="italic text-ochre-600 dark:text-ochre-300">weave</span> that suits your home and style.',
       tabs: {
-        tools: {
+        kain: {
           heading: 'Woven Fabrics',
           content:
             'Full-width ikat and lurik cloth to tailor into clothing, use as a throw, or hang as a piece of wall art.',
           alt: 'Illustration of a length of ikat cloth',
         },
-        dashboard: {
+        syal: {
           heading: 'Scarves & Shawls',
           content:
             'Light, soft and easy to wear. Our scarves are woven from local cotton and silk in natural colours that age beautifully.',
           alt: 'Illustration of a striped lurik scarf',
         },
-        features: {
+        dekorasi: {
           heading: 'Home Decor',
           content:
             'Cushion covers, tablecloths and runners that bring the warmth of handweaving to your living room and dining table.',

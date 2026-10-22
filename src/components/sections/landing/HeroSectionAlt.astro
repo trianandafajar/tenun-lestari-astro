@@ -1,6 +1,6 @@
 ---
 // Import the necessary dependencies
-import GithubBtn from '@components/ui/buttons/GithubBtn.astro';
+import PrimaryCTA from '@components/ui/buttons/PrimaryCTA.astro';
 
 // Define props from Astro
 const { title, subTitle, url } = Astro.props;
@@ -130,7 +130,7 @@ interface Props {
   {/* Github Button */}
   {url && (
     <div class="mt-8 flex justify-center gap-3">
-      <GithubBtn url={url} title={btnTitle} />
+      <PrimaryCTA url={url} title={btnTitle} />
     </div>
   )}
 </section>

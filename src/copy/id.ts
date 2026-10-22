@@ -278,10 +278,6 @@ export const id = {
         'Ilustrasi alat tenun dengan kain ikat setengah jadi dan gulungan benang berwarna alami',
       cta: 'Kenali Program Pengrajin Mitra',
     },
-    clients: {
-      title: 'Hadir di Butik dan Penginapan',
-      subTitle: 'Logo di bawah ini hanyalah contoh untuk keperluan demo.',
-    },
     featuresGeneral: {
       title: 'Nilai di Setiap Helai',
       subTitle:
@@ -292,19 +288,19 @@ export const id = {
       title:
         'Temukan <span class="italic text-ochre-600 dark:text-ochre-300">tenun</span> yang cocok untuk rumah dan gaya Anda.',
       tabs: {
-        tools: {
+        kain: {
           heading: 'Kain Tenun',
           content:
             'Kain ikat dan lurik lebar penuh untuk dijahit menjadi busana, dijadikan selimut, atau dipajang sebagai karya dinding.',
           alt: 'Ilustrasi lembaran kain tenun ikat',
         },
-        dashboard: {
+        syal: {
           heading: 'Syal & Selendang',
           content:
             'Ringan, lembut, dan mudah dipadukan. Syal kami ditenun dari kapas dan sutra lokal dengan warna alami yang menua dengan cantik.',
           alt: 'Ilustrasi syal lurik bergaris',
         },
-        features: {
+        dekorasi: {
           heading: 'Dekorasi Rumah',
           content:
             'Sarung bantal, taplak, dan pelari meja yang membawa kehangatan tenun ke ruang tamu dan meja makan Anda.',
