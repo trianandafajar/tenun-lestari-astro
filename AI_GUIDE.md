@@ -8,7 +8,7 @@ ScrewFast is an Astro + Tailwind CSS + Preline UI template for landing pages, bl
 
 Marketing site locales: **id** (Bahasa Indonesia, default, no prefix) and **en** (English, `/en/`). Routes live under `src/pages/` and `src/pages/en/`, but each route file is a one-line shell around a shared view in `src/views/` that takes the locale as a prop. Everything locale-related lives in [`src/utils/locale.ts`](src/utils/locale.ts); the current locale and its copy table are on `Astro.locals.locale` / `Astro.locals.copy` (set by [`src/middleware.ts`](src/middleware.ts)). Never parse `/en` out of a pathname or hard-code a locale prefix elsewhere.
 
-Docs (Starlight) locales: en, de, es, fa, fr, ja, zh-cn. Guides and welcome are translated; `construction/`, `tools/`, and `advanced/` fall back to English for non-root locales.
+Docs (Starlight) locales: id (root) and en (`/en/`), mirroring the marketing site. The docs are the Tenun Lestari care guide: `guides/` (introduction, motifs) and `perawatan/` (washing, storing).
 
 ## Path Aliases
 

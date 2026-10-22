@@ -7,8 +7,11 @@ import EmailContactInput from '@components/ui/forms/input/EmailContactInput.astr
 import PhoneInput from '@components/ui/forms/input/PhoneInput.astro';
 import TextAreaInput from '@components/ui/forms/input/TextAreaInput.astro';
 import Icon from '@components/ui/icons/Icon.astro';
+import { SITE } from '@data/constants';
+import { localePath } from '@utils/locale';
 
 const copy = Astro.locals.copy.contact;
+const { locale } = Astro.locals;
 const blockIconClass =
   'mt-1.5 h-6 w-6 shrink-0 text-neutral-600 dark:text-neutral-400';
 ---
@@ -73,7 +76,7 @@ const blockIconClass =
           content={copy.knowledgeContent}
           isLinkVisible={true}
           linkTitle={copy.knowledgeLink}
-          linkURL="#"
+          linkURL={localePath(locale, '/welcome-to-docs/')}
           isArrowVisible={true}
         >
           <Icon name="question" class={blockIconClass} />
@@ -84,7 +87,7 @@ const blockIconClass =
           content={copy.faqContent}
           isLinkVisible={true}
           linkTitle={copy.faqLink}
-          linkURL="#"
+          linkURL={`${localePath(locale)}#faq`}
           isArrowVisible={true}
         >
           <Icon name="chatBubble" class={blockIconClass} />
@@ -103,8 +106,8 @@ const blockIconClass =
           heading={copy.emailHeading}
           content={copy.emailContent}
           isLinkVisible={true}
-          linkTitle="halo@tenunlestari.example"
-          linkURL="mailto:halo@tenunlestari.example"
+          linkTitle={SITE.email}
+          linkURL={`mailto:${SITE.email}`}
         >
           <Icon name="envelopeOpen" class={blockIconClass} />
         </ContactIconBlock>

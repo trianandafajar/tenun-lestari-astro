@@ -36,63 +36,26 @@ export default defineConfig({
       // If only a Starlight i18n configuration is provided, an equivalent Astro i18n configuration is generated/used.
       // If only an Astro i18n configuration is provided, the Starlight i18n configuration is updated to match it.
       // If both an Astro and Starlight i18n configurations are provided, an error is thrown.
+      // Docs locales mirror the marketing site: Bahasa Indonesia at the root,
+      // English under /en/.
       locales: {
         root: {
-          label: 'English',
-          lang: 'en',
+          label: 'Bahasa Indonesia',
+          lang: 'id',
         },
-        de: { label: 'Deutsch', lang: 'de' },
-        es: { label: 'Español', lang: 'es' },
-        fa: { label: 'Persian', lang: 'fa', dir: 'rtl' },
-        fr: { label: 'Français', lang: 'fr' },
-        ja: { label: '日本語', lang: 'ja' },
-        'zh-cn': { label: '简体中文', lang: 'zh-CN' },
+        en: { label: 'English', lang: 'en' },
       },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
-          label: 'Quick Start Guides',
-          translations: {
-            de: 'Schnellstartanleitungen',
-            es: 'Guías de Inicio Rápido',
-            fa: 'راهنمای شروع سریع',
-            fr: 'Guides de Démarrage Rapide',
-            ja: 'クイックスタートガイド',
-            'zh-cn': '快速入门指南',
-          },
+          label: 'Panduan',
+          translations: { en: 'Guides' },
           items: [{ autogenerate: { directory: 'guides' } }],
         },
         {
-          label: 'Tools & Equipment',
-          // Translated guide intros exist per locale; these pages fall back to English.
-          translations: {
-            de: 'Werkzeuge & Ausrüstung',
-            es: 'Herramientas y Equipo',
-            fa: 'ابزار و تجهیزات',
-            fr: 'Outils et Équipement',
-            ja: 'ツールと機材',
-            'zh-cn': '工具与设备',
-          },
-          items: [
-            { label: 'Tool Guides', link: 'tools/tool-guides/' },
-            { label: 'Equipment Care', link: 'tools/equipment-care/' },
-          ],
-        },
-        {
-          label: 'Construction Services',
-          translations: {
-            de: 'Baudienstleistungen',
-            es: 'Servicios de Construcción',
-            fa: 'خدمات ساخت‌وساز',
-            fr: 'Services de Construction',
-            ja: '建設サービス',
-            'zh-cn': '施工服务',
-          },
-          items: [{ autogenerate: { directory: 'construction' } }],
-        },
-        {
-          label: 'Advanced Topics',
-          items: [{ autogenerate: { directory: 'advanced' } }],
+          label: 'Perawatan Kain',
+          translations: { en: 'Fabric Care' },
+          items: [{ autogenerate: { directory: 'perawatan' } }],
         },
       ],
       social: [

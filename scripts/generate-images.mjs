@@ -674,6 +674,18 @@ export const OUTPUTS = {
   'src/images/icon.png': icon(),
   'src/images/icon-maskable.png': icon(1),
   'src/images/social.png': social,
+  // Docs (Starlight): splash hero and the mark used in the docs header.
+  'src/images/starlight/tenun_hero.svg': svg(
+    520,
+    520,
+    `<circle cx="260" cy="260" r="236" fill="none" stroke="${C.ochre400}" stroke-width="6" stroke-dasharray="2 14" stroke-linecap="round"/>
+     ${logoMark(260, 260, 2.9, { base: C.nila700, a: C.ochre400, b: C.kapas })}`
+  ),
+  'src/images/starlight/tenun_mark.svg': svg(
+    112,
+    112,
+    logoMark(56, 56, 1, { base: C.nila700, a: C.ochre400, b: C.kapas })
+  ),
   ...ARTWORK,
 };
 
