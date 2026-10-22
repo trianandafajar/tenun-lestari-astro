@@ -182,6 +182,59 @@ export const Icons = {
     strokeLinejoin: 'round',
     stroke: 'currentColor',
   },
+  /* Weaving process icons (Proses Menenun). */
+  spool: {
+    paths: [
+      {
+        d: 'M6.75 3.75h10.5M6.75 20.25h10.5M8.25 3.75v16.5M15.75 3.75v16.5M8.25 8l7.5 2.5M8.25 12l7.5 2.5M8.25 16l7.5 2.5',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  droplet: {
+    paths: [
+      {
+        d: 'M12 3c3.2 3.8 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 8.8 6.8 12 3ZM9.25 14a2.75 2.75 0 0 0 2.75 2.75',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  loom: {
+    paths: [
+      {
+        d: 'M3.75 4.5h16.5M3.75 19.5h16.5M6.75 4.5v15M17.25 4.5v15M9.25 4.5V12M11.75 4.5V12M14.25 4.5V12M6.75 12h10.5M6.75 14.5h10.5M6.75 17h10.5',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  leaf: {
+    paths: [
+      {
+        d: 'M4.5 19.5c0-8.3 5.6-14.4 15-15 .2 9.4-5.9 15-14.2 15ZM4.5 19.5l7.5-7.5',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
   youtube: {
     paths: [
       {

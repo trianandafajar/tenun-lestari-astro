@@ -202,6 +202,35 @@ export const en: Copy = {
       imageAlt:
         'Illustration of folded ikat cloth in indigo and ochre patterns',
     },
+    process: {
+      eyebrow: 'The Weaving Process',
+      title: 'From yarn to cloth, slowly and with care',
+      subTitle:
+        'There are no motif-printing machines in our studio. Every cloth goes through four stages, all done by hand by artisans in our partner villages.',
+      steps: [
+        {
+          title: 'Preparing the Yarn',
+          content:
+            'Local cotton and silk yarn is spun, washed and stretched as warp to the width of the cloth.',
+        },
+        {
+          title: 'Tying & Dyeing',
+          content:
+            'The motif is tied off with raffia, then the yarn is dipped again and again in indigo, turmeric or tree bark.',
+        },
+        {
+          title: 'Weaving',
+          content:
+            'On a backstrap or treadle loom the weft goes in thread by thread until the motif slowly appears.',
+        },
+        {
+          title: 'Finishing',
+          content:
+            "The cloth is washed, its edges finished, labelled with the artisan's name and packed without plastic.",
+        },
+      ],
+      note: 'A single ikat cloth takes three to six weeks from yarn to ready-to-ship.',
+    },
     clients: {
       title: 'Found in Boutiques and Guesthouses',
       subTitle: 'The logos below are placeholders for demo purposes only.',

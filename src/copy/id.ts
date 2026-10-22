@@ -211,6 +211,35 @@ export const id = {
       imageAlt:
         'Ilustrasi kain tenun ikat bermotif nila dan kuning oker yang terlipat',
     },
+    process: {
+      eyebrow: 'Proses Menenun',
+      title: 'Dari benang hingga kain, perlahan dan penuh perhatian',
+      subTitle:
+        'Tidak ada mesin cetak motif di studio kami. Setiap kain melewati empat tahap yang dikerjakan dengan tangan oleh pengrajin di desa mitra.',
+      steps: [
+        {
+          title: 'Menyiapkan Benang',
+          content:
+            'Benang kapas dan sutra lokal dipintal, dicuci, lalu direntangkan sebagai lungsin sesuai lebar kain.',
+        },
+        {
+          title: 'Mengikat & Mewarnai',
+          content:
+            'Motif diikat dengan tali rafia, lalu benang dicelup berulang kali dalam nila, kunyit, atau kulit kayu.',
+        },
+        {
+          title: 'Menenun',
+          content:
+            'Di alat tenun gendong atau ATBM, benang pakan disisipkan helai demi helai hingga motif perlahan muncul.',
+        },
+        {
+          title: 'Merampungkan',
+          content:
+            'Kain dicuci, dirapikan tepinya, diberi label nama pengrajin, dan dikemas tanpa plastik.',
+        },
+      ],
+      note: 'Satu lembar kain ikat membutuhkan tiga hingga enam minggu dari benang hingga siap dikirim.',
+    },
     clients: {
       title: 'Hadir di Butik dan Penginapan',
       subTitle: 'Logo di bawah ini hanyalah contoh untuk keperluan demo.',

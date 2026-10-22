@@ -1,0 +1,95 @@
+---
+/**
+ * "Proses Menenun": the weaving process, from yarn to finished cloth, as a
+ * numbered sequence of steps on a deep-indigo panel with a woven texture.
+ * Copy comes from the caller (`copy.home.process`); icons are `IconName`s.
+ */
+import Icon from '@components/ui/icons/Icon.astro';
+import type { IconName } from '@components/ui/icons/icons';
+
+interface Step {
+  title: string;
+  content: string;
+  icon: IconName;
+}
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  subTitle?: string;
+  steps: Step[];
+  note?: string;
+  id?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  subTitle,
+  steps,
+  note,
+  id = 'proses-menenun',
+} = Astro.props;
+---
+
+<section
+  id={id}
+  class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 2xl:max-w-full"
+>
+  <div class="relative overflow-hidden rounded-3xl bg-nila-900 px-6 py-12 text-neutral-100 md:px-12 lg:py-16 dark:bg-nila-950 dark:ring-1 dark:ring-white/10">
+    <div
+      aria-hidden="true"
+      class="bg-anyaman pointer-events-none absolute inset-0 text-ochre-300 opacity-70"
+    ></div>
+    <div
+      aria-hidden="true"
+      class="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-ochre-400/20 blur-3xl"
+    ></div>
+
+    <div class="relative max-w-2xl">
+      {eyebrow && (
+        <p class="text-sm font-semibold tracking-[0.2em] text-ochre-300 uppercase">
+          {eyebrow}
+        </p>
+      )}
+      <h2 class="mt-3 text-3xl font-semibold text-balance text-neutral-50 md:text-4xl md:leading-tight">
+        {title}
+      </h2>
+      {subTitle && (
+        <p class="mt-4 text-lg text-pretty text-nila-100/85">{subTitle}</p>
+      )}
+    </div>
+
+    <ol class="relative mt-10 grid gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-4">
+      {steps.map((step, index) => (
+        <li class="relative flex flex-col rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-display text-5xl leading-none text-ochre-300 italic">
+              {String(index + 1).padStart(2, '0')}
+            </span>
+            <Icon name={step.icon} class="h-8 w-8 shrink-0 text-ochre-300" />
+          </div>
+          <h3 class="mt-6 text-xl font-semibold text-neutral-50">
+            {step.title}
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-pretty text-nila-100/80">
+            {step.content}
+          </p>
+          {index < steps.length - 1 && (
+            <span
+              aria-hidden="true"
+              class="absolute top-12 -right-4 hidden w-6 border-t-2 border-dashed border-ochre-400/70 lg:block"
+            />
+          )}
+        </li>
+      ))}
+    </ol>
+
+    {note && (
+      <p class="relative mt-8 flex items-center gap-x-2 text-sm text-nila-100/80">
+        <Icon name="leaf" class="h-5 w-5 shrink-0 text-ochre-300" />
+        {note}
+      </p>
+    )}
+  </div>
+</section>
