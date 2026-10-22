@@ -5,16 +5,16 @@ import AlternatingSections, {
   type Article,
 } from '@components/ui/blocks/AlternatingSections.astro';
 import FeaturesStats from '@components/sections/features/FeaturesStats.astro';
-import blueprints from '@images/blueprints-image.avif';
-import personWorking from '@images/person-working.avif';
-import beforeAfter from '@images/before-after.avif';
-import constructionWorkers from '@images/construction-workers.avif';
-import aerialView from '@images/aerial-view.avif';
-import usingTools from '@images/using-tools.avif';
-import progressBuilding from '@images/progress-building.avif';
-import underConstruction from '@images/under-construction.avif';
+import sketsa from '@images/tenun/layanan-sketsa.webp';
+import benang from '@images/tenun/layanan-benang.webp';
+import alatTenun from '@images/tenun/layanan-alat-tenun.webp';
+import bantal from '@images/tenun/layanan-bantal.webp';
+import taplak from '@images/tenun/layanan-taplak.webp';
+import perawatan from '@images/tenun/layanan-perawatan.webp';
+import lurik from '@images/tenun/layanan-lurik.webp';
+import songket from '@images/tenun/layanan-songket.webp';
 import { getCopy } from '@/copy';
-import type { MarketingLocale } from '@utils/locale';
+import { localePath, type MarketingLocale } from '@utils/locale';
 
 /** The services page in one locale. */
 interface Props {
@@ -30,37 +30,40 @@ const articles: Article[] = [
     title: articleCopy.guidance.title,
     subTitle: articleCopy.guidance.subTitle,
     images: [
-      { src: blueprints, alt: articleCopy.guidance.imageAlts[0] },
-      { src: personWorking, alt: articleCopy.guidance.imageAlts[1] },
+      { src: sketsa, alt: articleCopy.guidance.imageAlts[0] },
+      { src: benang, alt: articleCopy.guidance.imageAlts[1] },
     ],
   },
   {
     title: articleCopy.craftsmanship.title,
     subTitle: articleCopy.craftsmanship.subTitle,
-    images: [{ src: beforeAfter, alt: articleCopy.craftsmanship.imageAlts[0] }],
-    cta: { title: articleCopy.craftsmanship.cta, url: '#' },
+    images: [{ src: alatTenun, alt: articleCopy.craftsmanship.imageAlts[0] }],
+    cta: {
+      title: articleCopy.craftsmanship.cta,
+      url: localePath(locale, '/contact'),
+    },
   },
   {
     title: articleCopy.oversight.title,
     subTitle: articleCopy.oversight.subTitle,
     images: [
-      { src: constructionWorkers, alt: articleCopy.oversight.imageAlts[0] },
-      { src: aerialView, alt: articleCopy.oversight.imageAlts[1] },
+      { src: bantal, alt: articleCopy.oversight.imageAlts[0] },
+      { src: taplak, alt: articleCopy.oversight.imageAlts[1] },
     ],
   },
   {
     title: articleCopy.maintenance.title,
     subTitle: articleCopy.maintenance.subTitle,
-    images: [{ src: usingTools, alt: articleCopy.maintenance.imageAlts[0] }],
+    images: [{ src: perawatan, alt: articleCopy.maintenance.imageAlts[0] }],
   },
   {
     title: articleCopy.bespoke.title,
     subTitle: articleCopy.bespoke.subTitle,
     images: [
-      { src: progressBuilding, alt: articleCopy.bespoke.imageAlts[0] },
-      { src: underConstruction, alt: articleCopy.bespoke.imageAlts[1] },
+      { src: lurik, alt: articleCopy.bespoke.imageAlts[0] },
+      { src: songket, alt: articleCopy.bespoke.imageAlts[1] },
     ],
-    cta: { title: articleCopy.bespoke.cta, url: '#' },
+    cta: { title: articleCopy.bespoke.cta, url: localePath(locale, '/blog') },
   },
 ];
 ---
@@ -73,7 +76,7 @@ const articles: Article[] = [
   <MainSection
     title={copy.intro.title}
     subTitle={copy.intro.subTitle}
-    cta={{ title: copy.intro.cta, url: '#' }}
+    cta={{ title: copy.intro.cta, url: localePath(locale, '/contact') }}
   />
   <AlternatingSections articles={articles} />
   <FeaturesStats
