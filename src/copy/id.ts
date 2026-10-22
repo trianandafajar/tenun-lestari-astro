@@ -48,17 +48,17 @@ export const id = {
     footer: {
       /** Section titles and link labels for `footerSections` in `@data/navigation`, keyed by id. */
       sectionTitles: {
-        ecosystem: 'Belanja & Panduan',
-        company: 'Tentang Kami',
+        shop: 'Belanja & Panduan',
+        about: 'Tentang Kami',
       },
       links: {
-        documentation: 'Panduan Perawatan',
-        tools: 'Koleksi',
+        collection: 'Koleksi',
         services: 'Layanan',
-        about: 'Kisah Kami',
-        blog: 'Jurnal',
+        careGuide: 'Panduan Perawatan',
+        story: 'Kisah Pengrajin',
+        journal: 'Jurnal',
+        artisans: 'Program Pengrajin Mitra',
         careers: 'Karier',
-        customers: 'Pengrajin Mitra',
       },
       hiringBadge: 'Kami merekrut!',
       stayUpToDate: 'Kabar dari studio',

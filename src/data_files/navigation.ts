@@ -14,43 +14,52 @@ export const navLinks: { id: NavLinkId; path: string }[] = [
   { id: 'contact', path: '/contact' },
 ];
 
-export type FooterSectionId = 'ecosystem' | 'company';
+export type FooterSectionId = 'shop' | 'about';
 export type FooterLinkId =
-  | 'documentation'
-  | 'tools'
+  | 'careGuide'
+  | 'collection'
   | 'services'
-  | 'about'
-  | 'blog'
+  | 'story'
+  | 'journal'
   | 'careers'
-  | 'customers';
+  | 'artisans';
 
 export const footerSections: {
   id: FooterSectionId;
   links: { id: FooterLinkId; path: string; badge?: 'hiring' }[];
 }[] = [
   {
-    id: 'ecosystem',
+    id: 'shop',
     links: [
-      { id: 'documentation', path: '/welcome-to-docs/' },
-      { id: 'tools', path: '/products' },
+      { id: 'collection', path: '/products' },
       { id: 'services', path: '/services' },
+      { id: 'careGuide', path: '/welcome-to-docs/' },
     ],
   },
   {
-    id: 'company',
+    id: 'about',
     links: [
-      { id: 'about', path: '#' },
-      { id: 'blog', path: '/blog' },
-      { id: 'careers', path: '#', badge: 'hiring' },
-      { id: 'customers', path: '#' },
+      { id: 'story', path: '/blog' },
+      { id: 'journal', path: '/blog' },
+      { id: 'artisans', path: '/services' },
+      { id: 'careers', path: '/contact', badge: 'hiring' },
     ],
   },
 ];
 
+/**
+ * Social profiles. Tenun Lestari is fictional, so these are placeholders
+ * pointing at each network's home page; replace them with real handles.
+ */
 export const socialLinks = {
+  instagram: 'https://www.instagram.com/',
   facebook: 'https://www.facebook.com/',
-  x: 'https://twitter.com/',
-  github: 'https://github.com/mearashadowfax/ScrewFast',
-  google: 'https://www.google.com/',
-  slack: 'https://slack.com/',
+  youtube: 'https://www.youtube.com/',
+  x: 'https://x.com/',
+};
+
+/** The open-source template this site is built on (credited in the footer). */
+export const templateCredit = {
+  name: 'ScrewFast',
+  url: 'https://github.com/mearashadowfax/ScrewFast',
 };

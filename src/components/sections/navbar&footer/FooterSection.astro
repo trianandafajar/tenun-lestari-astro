@@ -5,7 +5,7 @@ import DemoForm from '@components/ui/forms/DemoForm.astro';
 import Icon from '@components/ui/icons/Icon.astro';
 import BrandLogo from '@components/BrandLogo.astro';
 import { SITE } from '@data/constants';
-import { footerSections, socialLinks } from '@data/navigation';
+import { footerSections, socialLinks, templateCredit } from '@data/navigation';
 import { localePath } from '@utils/locale';
 
 const { locale, copy: t } = Astro.locals;
@@ -71,11 +71,11 @@ const socialIconClass =
           {` `}
           <a
             class="rounded-lg font-medium underline underline-offset-2 ring-zinc-500 outline-hidden transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-hidden focus-visible:ring-3 dark:ring-zinc-200 dark:hover:text-neutral-300"
-            href="https://www.gulamoff.dev/"
+            href={templateCredit.url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            gulamoff
+            {templateCredit.name}
           </a>
           .
         </p>
@@ -83,24 +83,20 @@ const socialIconClass =
 
       {/* Social Brands */}
       <div>
+        <FooterSocialLink url={socialLinks.instagram} label="Instagram">
+          <Icon name="instagram" class={socialIconClass} title="Instagram" />
+        </FooterSocialLink>
+
         <FooterSocialLink url={socialLinks.facebook} label="Facebook">
           <Icon name="facebook" class={socialIconClass} title="Facebook" />
         </FooterSocialLink>
 
+        <FooterSocialLink url={socialLinks.youtube} label="YouTube">
+          <Icon name="youtube" class={socialIconClass} title="YouTube" />
+        </FooterSocialLink>
+
         <FooterSocialLink url={socialLinks.x} label="X">
           <Icon name="x" class={socialIconClass} title="X" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={socialLinks.github} label="GitHub">
-          <Icon name="githubMark" class={socialIconClass} title="GitHub" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={socialLinks.google} label="Google">
-          <Icon name="google" class={socialIconClass} title="Google" />
-        </FooterSocialLink>
-
-        <FooterSocialLink url={socialLinks.slack} label="Slack">
-          <Icon name="slack" class={socialIconClass} title="Slack" />
         </FooterSocialLink>
       </div>
     </div>

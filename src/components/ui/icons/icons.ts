@@ -169,6 +169,32 @@ export const Icons = {
     viewBox: '0 0 24 24',
     fill: 'currentColor',
   },
+  instagram: {
+    paths: [
+      {
+        d: 'M7 2.75h10A4.25 4.25 0 0 1 21.25 7v10A4.25 4.25 0 0 1 17 21.25H7A4.25 4.25 0 0 1 2.75 17V7A4.25 4.25 0 0 1 7 2.75ZM12 8.25a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5ZM17.25 6.75h.01',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
+  youtube: {
+    paths: [
+      {
+        d: 'M3.2 7.4c.2-1.4 1.3-2.4 2.7-2.5 2-.2 4-.3 6.1-.3s4.1.1 6.1.3c1.4.1 2.5 1.1 2.7 2.5.2 1.5.3 3 .3 4.6s-.1 3.1-.3 4.6c-.2 1.4-1.3 2.4-2.7 2.5-2 .2-4 .3-6.1.3s-4.1-.1-6.1-.3c-1.4-.1-2.5-1.1-2.7-2.5-.2-1.5-.3-3-.3-4.6s.1-3.1.3-4.6ZM10 9.2v5.6l4.8-2.8L10 9.2Z',
+      },
+    ],
+    viewBox: '0 0 24 24',
+    fill: 'none',
+    strokeWidth: '1.5',
+    strokeLinecap: 'round',
+    strokeLinejoin: 'round',
+    stroke: 'currentColor',
+  },
   x: {
     paths: [
       {
