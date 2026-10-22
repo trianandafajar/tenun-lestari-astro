@@ -231,6 +231,44 @@ export const en: Copy = {
       ],
       note: 'A single ikat cloth takes three to six weeks from yarn to ready-to-ship.',
     },
+    artisans: {
+      eyebrow: 'Artisan Stories',
+      title: 'The hands behind every thread',
+      paragraphs: [
+        'Tenun Lestari began with a visit to a weaving village that its young people were slowly leaving. The cloth was beautiful, but what it sold for was not enough to live on.',
+        'Today we work with weaving groups on prices agreed up front, natural-dye training, and orders that come all year round rather than only in season.',
+      ],
+      quote: {
+        content:
+          'My grandmother taught me this motif. Now young people are learning again, because weaving can be a livelihood once more.',
+        author: 'Ibu Ratna Wulandari',
+        role: 'Weaving group leader (fictional character)',
+      },
+      list: [
+        {
+          name: 'Ibu Ratna Wulandari',
+          craft: 'Ikat weaving',
+          village: 'Benang Sari village',
+          years: '32 years weaving',
+        },
+        {
+          name: 'Mbok Sumirah',
+          craft: 'Treadle-loom lurik',
+          village: 'Watu Lungsin village',
+          years: '25 years weaving',
+        },
+        {
+          name: 'Kak Melati Ndun',
+          craft: 'Natural dyeing',
+          village: 'Nila Wangi village',
+          years: '12 years dyeing',
+        },
+      ],
+      note: 'The names, villages and quote in this section are fictional, for demo purposes only.',
+      imageAlt:
+        'Illustration of a loom with half-woven ikat cloth and skeins of naturally dyed yarn',
+      cta: 'Meet the Partner Artisan Programme',
+    },
     clients: {
       title: 'Found in Boutiques and Guesthouses',
       subTitle: 'The logos below are placeholders for demo purposes only.',

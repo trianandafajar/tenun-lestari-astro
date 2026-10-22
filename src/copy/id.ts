@@ -240,6 +240,44 @@ export const id = {
       ],
       note: 'Satu lembar kain ikat membutuhkan tiga hingga enam minggu dari benang hingga siap dikirim.',
     },
+    artisans: {
+      eyebrow: 'Cerita Pengrajin',
+      title: 'Tangan-tangan di balik setiap helai',
+      paragraphs: [
+        'Tenun Lestari berawal dari kunjungan ke sebuah desa tenun yang perlahan ditinggalkan anak mudanya. Kainnya indah, tetapi harga jualnya tidak cukup untuk hidup.',
+        'Kini kami bekerja bersama kelompok-kelompok tenun dengan harga yang disepakati sejak awal, pelatihan pewarnaan alami, dan pesanan yang datang sepanjang tahun, bukan hanya musiman.',
+      ],
+      quote: {
+        content:
+          'Motif ini dulu diajarkan nenek saya. Sekarang anak-anak muda ikut belajar lagi, karena menenun kembali bisa menjadi penghidupan.',
+        author: 'Ibu Ratna Wulandari',
+        role: 'Ketua kelompok tenun (tokoh fiktif)',
+      },
+      list: [
+        {
+          name: 'Ibu Ratna Wulandari',
+          craft: 'Tenun ikat',
+          village: 'Desa Benang Sari',
+          years: '32 tahun menenun',
+        },
+        {
+          name: 'Mbok Sumirah',
+          craft: 'Lurik ATBM',
+          village: 'Desa Watu Lungsin',
+          years: '25 tahun menenun',
+        },
+        {
+          name: 'Kak Melati Ndun',
+          craft: 'Pewarnaan alami',
+          village: 'Desa Nila Wangi',
+          years: '12 tahun mencelup',
+        },
+      ],
+      note: 'Nama, desa, dan kutipan pada bagian ini adalah tokoh fiktif untuk keperluan demo.',
+      imageAlt:
+        'Ilustrasi alat tenun dengan kain ikat setengah jadi dan gulungan benang berwarna alami',
+      cta: 'Kenali Program Pengrajin Mitra',
+    },
     clients: {
       title: 'Hadir di Butik dan Penginapan',
       subTitle: 'Logo di bawah ini hanyalah contoh untuk keperluan demo.',

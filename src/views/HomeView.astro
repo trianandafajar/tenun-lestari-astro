@@ -4,6 +4,8 @@ import HeroSection from '@components/sections/landing/HeroSection.astro';
 import HeroSectionAlt from '@components/sections/landing/HeroSectionAlt.astro';
 import ClientsSection from '@components/sections/landing/ClientsSection.astro';
 import WeavingProcess from '@components/sections/landing/WeavingProcess.astro';
+import ArtisanStory from '@components/sections/landing/ArtisanStory.astro';
+import artisanImage from '@images/tenun/pengrajin.webp';
 import FeaturesGeneral from '@components/sections/features/FeaturesGeneral.astro';
 import FeaturesNavs from '@components/sections/features/FeaturesNavs.astro';
 import TestimonialsSection from '@components/sections/testimonials/TestimonialsSection.astro';
@@ -92,6 +94,18 @@ const testimonials = copy.testimonials.quotes.map(quote => ({
     src={featureImage}
     alt={copy.featuresGeneral.imageAlt}
     features={t.data.features}
+  />
+
+  <ArtisanStory
+    eyebrow={copy.artisans.eyebrow}
+    title={copy.artisans.title}
+    paragraphs={copy.artisans.paragraphs}
+    quote={copy.artisans.quote}
+    artisans={copy.artisans.list}
+    note={copy.artisans.note}
+    src={artisanImage}
+    alt={copy.artisans.imageAlt}
+    cta={{ title: copy.artisans.cta, url: localePath(locale, '/services') }}
   />
 
   <FeaturesNavs

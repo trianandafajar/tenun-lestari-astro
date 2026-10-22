@@ -39,7 +39,7 @@ export const footerSections: {
   {
     id: 'about',
     links: [
-      { id: 'story', path: '/blog' },
+      { id: 'story', path: '/#cerita-pengrajin' },
       { id: 'journal', path: '/blog' },
       { id: 'artisans', path: '/services' },
       { id: 'careers', path: '/contact', badge: 'hiring' },
