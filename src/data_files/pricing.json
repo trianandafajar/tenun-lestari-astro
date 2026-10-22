@@ -1,38 +1,38 @@
 {
-  "title": "Simple, Transparent Pricing",
-  "subTitle": "Boost efficiency with ScrewFast's clear, value-driven plans.",
-  "badge": "Best value",
-  "thirdOption": "Enterprise Solutions?",
-  "btnText": "Get a Custom Quote",
+  "title": "Lokakarya Menenun",
+  "subTitle": "Belajar langsung dari pengrajin di studio kami. Kelas kecil, bahan disediakan, dan Anda membawa pulang karya sendiri.",
+  "badge": "Paling diminati",
+  "thirdOption": "Ingin kelas privat untuk tim atau komunitas?",
+  "btnText": "Hubungi Kami",
 
   "starterKit": {
-    "name": "Starter Kit",
-    "description": "Best option for DIY projects",
-    "price": "49",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Kelas Pengenalan",
+    "description": "Sehari mengenal alat tenun dan pewarna nila",
+    "price": "350",
+    "cents": ".000",
+    "billingFrequency": "Rupiah / peserta",
     "features": [
-      "Key hardware tools",
-      "Access to guides & tutorials",
-      "Standard support"
+      "Sesi 4 jam bersama pengrajin",
+      "Mencelup benang dengan nila",
+      "Membawa pulang sapu tangan tenun"
     ],
-    "purchaseBtnTitle": "Get the Starter Kit",
+    "purchaseBtnTitle": "Daftar Kelas Pengenalan",
     "purchaseLink": "#"
   },
 
   "professionalToolbox": {
-    "name": "Professional Toolbox",
-    "description": "Best for large scale uses",
-    "price": "89",
-    "cents": ".00",
-    "billingFrequency": "USD / monthly",
+    "name": "Kelas Intensif",
+    "description": "Tiga hari dari mengikat motif hingga menenun",
+    "price": "1.250",
+    "cents": ".000",
+    "billingFrequency": "Rupiah / peserta",
     "features": [
-      "Premium tool selection",
-      "Priority support",
-      "Exclusive content & deals",
-      "Bulk order discounts"
+      "Mengikat motif ikat sendiri",
+      "Pewarnaan alami dengan tiga bahan",
+      "Menenun selendang ukuran kecil",
+      "Makan siang dan modul panduan"
     ],
-    "purchaseBtnTitle": "Get the Professional Toolbox",
+    "purchaseBtnTitle": "Daftar Kelas Intensif",
     "purchaseLink": "#"
   }
 }

@@ -1,26 +1,24 @@
-import faqs from '@data/faqs.json';
-import features from '@data/features.json';
-import pricing from '@data/pricing.json';
+import faqs from '@data/en/faqs.json';
+import features from '@data/en/features.json';
+import pricing from '@data/en/pricing.json';
+import type { Copy } from './index';
 
 /**
- * English copy table. This file defines the shape every other locale must
- * satisfy (see `Copy` in `./index.ts`), so a missing translation fails
- * `astro check` instead of leaking English onto a localised page.
+ * English copy table, the secondary locale of the Tenun Lestari site
+ * (served under `/en/`). Must satisfy `Copy`, the shape of `./id.ts`.
  *
- * Paths are unlocalised (`/products`, not `/fr/products`); callers run them
- * through `localePath()` from `@utils/locale`.
+ * Tenun Lestari is a fictional brand: every person, testimonial and figure
+ * below is sample content for demonstration only.
  */
-export const en = {
+export const en: Copy = {
   site: {
-    /** Default `<meta name="description">` when a page sets none. */
     description:
-      'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.',
-    /** schema.org `WebSite.description` in every page's `isPartOf`. */
+      'Tenun Lestari makes handwoven fabrics, scarves and home goods together with local Indonesian artisans, using natural dyes and fair pay.',
     descriptionShort:
-      'ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.',
-    ogTitle: 'ScrewFast: Hardware Tools & Construction Services',
+      'Handwoven fabrics, scarves and home goods from local Indonesian artisans.',
+    ogTitle: 'Tenun Lestari: Sustainable Handwoven Textiles',
     ogDescription:
-      "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!",
+      'Ikat, lurik and songket cloth woven slowly by village artisans, coloured with natural dyes and made to be used for years. Explore the Tenun Lestari collection.',
   },
 
   layout: {
@@ -33,74 +31,71 @@ export const en = {
   },
 
   nav: {
-    /** Labels for `navLinks` in `@data/navigation`, keyed by id. */
     labels: {
       home: 'Home',
-      products: 'Products',
+      products: 'Collection',
       services: 'Services',
-      blog: 'Blog',
+      blog: 'Journal',
       contact: 'Contact',
     },
     footer: {
-      /** Section titles and link labels for `footerSections` in `@data/navigation`, keyed by id. */
       sectionTitles: {
-        ecosystem: 'Ecosystem',
-        company: 'Company',
+        ecosystem: 'Shop & Guides',
+        company: 'About',
       },
       links: {
-        documentation: 'Documentation',
-        tools: 'Tools & Equipment',
-        services: 'Construction Services',
-        about: 'About us',
-        blog: 'Blog',
+        documentation: 'Care Guide',
+        tools: 'Collection',
+        services: 'Services',
+        about: 'Our Story',
+        blog: 'Journal',
         careers: 'Careers',
-        customers: 'Customers',
+        customers: 'Partner Artisans',
       },
       hiringBadge: "We're hiring!",
-      stayUpToDate: 'Stay up to date',
+      stayUpToDate: 'Notes from the studio',
       stayUpToDateContent:
-        'Stay updated with the latest tools and exclusive deals.',
-      craftedBy: 'Crafted by',
+        'New collections, workshop dates and artisan stories, once a month.',
+      craftedBy: 'Built on the template',
       newsletterDemoMessage:
         'Thanks! (Demo only — wire an email service to collect real subscribers.)',
     },
-    /** Text for the optional mega menu (`@data/mega_link`). */
     megaMenu: {
       services: {
         guides: {
-          title: 'Explore Advice and Explanations',
+          title: 'Fabric Care Guide',
           description:
-            "Dive deep into helpful guides and explanations for all of ScrewFast's features",
+            'How to wash, store and look after handwoven cloth so its colour lasts',
         },
         integrations: {
-          title: 'Discover Integrations',
+          title: 'Boutique & Hotel Partnerships',
           description:
-            'Supercharge Your Workflow. Seamless integrations with all your favorite tools',
+            'Made-to-order woven textiles and decor for your hospitality space',
         },
         experts: {
-          title: 'Expert Services',
-          description: "Go beyond tools with ScrewFast's expert services",
+          title: 'Custom Orders',
+          description: 'Design a motif and colourway together with our weavers',
         },
         tools: {
-          title: 'Cutting-Edge Tools',
+          title: 'New Arrivals',
           description:
-            "Build Smarter, Faster. Experience next-level efficiency with ScrewFast's cutting-edge construction tools",
+            'Ikat cloth, lurik scarves and home decor from this weaving season',
         },
         plans: {
-          title: 'Simple Plans',
+          title: 'Weaving Workshops',
           description:
-            "Boost your efficiency with ScrewFast's straightforward, value-driven plans",
+            'Learn the basics of weaving and natural dyeing from the artisans',
         },
         community: {
-          title: 'Community Forum',
-          description: 'Learn, share, and connect with other ScrewFast users',
+          title: 'Weaving Community',
+          description: 'Share stories, motifs and care tips for woven cloth',
         },
       },
-      successStories: 'Success Stories',
+      successStories: 'Customer Stories',
       successStory: {
         description:
-          'See how ScrewFast has empowered businesses of all sizes to achieve outstanding results.',
-        imageAlt: 'Portrait of a smiling person',
+          'See how Tenun Lestari cloth brings warmth to the homes and spaces of our customers.',
+        imageAlt: 'Woven motif illustration',
       },
       learnMore: 'Learn more',
     },
@@ -118,7 +113,7 @@ export const en = {
     confirmPassword: 'Confirm Password',
     forgotPassword: 'Forgot password?',
     passwordHint: '8+ characters required',
-    passwordMismatch: 'Password does not match the password',
+    passwordMismatch: 'Passwords do not match',
     rememberMe: 'Remember me',
     acceptTerms: 'I accept the ',
     termsAndConditions: 'Terms and Conditions',
@@ -169,7 +164,7 @@ export const en = {
     wasHelpful: 'Was this post helpful?',
     yes: 'Yes',
     no: 'No',
-    ogSection: 'Blog',
+    ogSection: 'Journal',
   },
 
   insights: {
@@ -179,177 +174,172 @@ export const en = {
   },
 
   products: {
-    ogSection: 'Hardware Tools',
+    ogSection: 'Collection',
     tabs: 'Tabs',
   },
 
   notFound: {
     title: 'Page Not Found',
-    subTitle: "Oops, this isn't the tool you were looking for!",
+    subTitle: 'Looks like this thread came loose from the cloth.',
     content:
-      "Don't let this hiccup slow you down. Let's get you back to building your masterpiece.",
+      "No harm done. Let's head back home and keep exploring the collection.",
     goHome: 'Go Home',
     goBack: 'Go Back',
   },
 
   home: {
-    banner: 'Explore ScrewFast on GitHub',
+    banner: 'The 2026 Rainy Season collection is here',
     hero: {
       title:
-        'Equip Your Projects with <span class="text-ochre-600 dark:text-ochre-300">ScrewFast</span>',
+        'Handwoven cloth, made <span class="italic text-ochre-600 dark:text-ochre-300">to last</span>, from the village to your home',
       subTitle:
-        'Top-quality hardware tools and expert construction services for every project need.',
-      primaryBtn: 'Start Exploring',
-      secondaryBtn: 'Contact Sales Team',
-      rating: '<span class="font-bold">4.8</span> / 5',
-      reviews: 'From Over <span class="font-bold">12.8k</span> Reviews',
+        'Every piece is woven slowly by local artisans, dyed with indigo, turmeric and tree bark, and finished to live in your home for years.',
+      primaryBtn: 'Explore the Collection',
+      secondaryBtn: 'Custom Orders',
+      rating: '<span class="font-bold">4.9</span> / 5',
+      reviews:
+        'from <span class="font-bold">1,200+</span> reviews (sample data)',
       imageAlt:
-        'Stack of ScrewFast product boxes containing assorted hardware tools',
+        'Illustration of folded ikat cloth in indigo and ochre patterns',
     },
     clients: {
-      title: 'Trusted by Industry Leaders',
-      subTitle: 'Experience the reliability chosen by industry giants.',
+      title: 'Found in Boutiques and Guesthouses',
+      subTitle: 'The logos below are placeholders for demo purposes only.',
     },
     featuresGeneral: {
-      title: 'Meeting Industry Demands',
+      title: 'Values in Every Thread',
       subTitle:
-        "At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals.",
-      imageAlt: 'ScrewFast products in floating boxes',
+        "We believe beautiful cloth shouldn't cost the earth or the people who make it. That's why every collection is made in small batches, from materials we can trace back to their source.",
+      imageAlt: 'Illustration of a gold songket motif on an indigo ground',
     },
     featuresNavs: {
       title:
-        'Customize <span class="text-ochre-600 dark:text-ochre-300">ScrewFast</span>\'s offerings to perfectly suit your hardware and construction needs.',
+        'Find the <span class="italic text-ochre-600 dark:text-ochre-300">weave</span> that suits your home and style.',
       tabs: {
         tools: {
-          heading: 'Cutting-Edge Tools',
+          heading: 'Woven Fabrics',
           content:
-            "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-          alt: 'Yellow and black heavy equipment on brown grass field',
+            'Full-width ikat and lurik cloth to tailor into clothing, use as a throw, or hang as a piece of wall art.',
+          alt: 'Illustration of a length of ikat cloth',
         },
         dashboard: {
-          heading: 'Intuitive Dashboards',
+          heading: 'Scarves & Shawls',
           content:
-            "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-          alt: 'A screenshot or graphic representation of the intuitive dashboard',
+            'Light, soft and easy to wear. Our scarves are woven from local cotton and silk in natural colours that age beautifully.',
+          alt: 'Illustration of a striped lurik scarf',
         },
         features: {
-          heading: 'Robust Features',
+          heading: 'Home Decor',
           content:
-            "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-          alt: 'Gray metal building frame near tower crane during daytime',
+            'Cushion covers, tablecloths and runners that bring the warmth of handweaving to your living room and dining table.',
+          alt: 'Illustration of a cushion cover with a woven check motif',
         },
       },
     },
     testimonials: {
-      title: 'Fast-Track Your Projects',
+      title: 'Stories from Customers',
       subTitle:
-        'At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined.',
+        'The testimonials on this page are fictional samples for demo purposes; names and figures do not refer to real people or data.',
       quotes: [
         {
           content:
-            'ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!',
-          author: 'Samantha Ruiz',
-          role: 'Chief Operating Officer | ConstructIt Inc.',
+            'The indigo shawl I bought two years ago has only grown more beautiful with wear. It feels like taking home a piece of the village it came from.',
+          author: 'Rara Anindita (sample)',
+          role: 'Fictional customer | Bandung',
         },
       ],
       statistics: [
         {
-          count: '70k+',
-          description:
-            'customers equipped – from DIY to major construction firms',
+          count: '120+',
+          description: 'partner artisans across six weaving villages (sample)',
         },
         {
-          count: '35%',
-          description:
-            'uptick in project efficiency with ScrewFast tools and services',
+          count: '100%',
+          description: 'natural dyes across our core collection',
         },
         {
-          count: '15.3%',
-          description:
-            'reduction in maintenance costs reported by long-term clients',
+          count: '3 wks',
+          description: 'average time to weave a single ikat cloth',
         },
         {
-          count: '2x',
-          description: 'quicker assembly using innovative fastening solutions',
+          count: '0',
+          description: 'single-use plastics in our shipping',
         },
       ],
     },
     faqTitle: 'Frequently<br />asked questions',
     heroAlt: {
-      title: "Let's Build Together",
+      title: 'Keeping Tradition Alive, Together',
       subTitle:
-        'ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks.',
-      btn: 'Continue with Github',
+        'Every purchase helps artisans keep weaving and pass their motifs on to the next generation.',
+      btn: 'See the Collection',
     },
   },
 
   services: {
     title: 'Services',
     metaDescription:
-      'Uniting expertise with your vision, ScrewFast provides exceptional service and comprehensive solutions in the hardware and construction industry, from consultation to project completion.',
-    ogTitle: 'Expert Consultation Services | ScrewFast',
+      'Custom woven orders, weaving workshops, boutique and hotel partnerships, and textile care from Tenun Lestari.',
+    ogTitle: 'Services | Tenun Lestari',
     intro: {
-      title: 'Uniting Expertise with Your Vision',
+      title: 'More Than Just Cloth',
       subTitle:
-        'At ScrewFast, we take pride in providing comprehensive solutions and exceptional service in the hardware and construction industry. Our experienced team is dedicated to supporting your project from inception to completion with a range of specialized services.',
-      cta: 'Schedule a Consultation',
+        'Beyond our ready-to-ship collection, we offer services that connect you directly with our artisans: from designing your own motif to learning to weave in our studio.',
+      cta: 'Book a Consultation',
     },
     articles: {
       guidance: {
-        title: 'Delivering Expert Guidance',
+        title: 'Custom Woven Orders',
         subTitle:
-          'Embarking on a construction project can be overwhelming. With our professional consultation services, we guide you through every stage, ensuring you make informed decisions. Whether you are a DIY enthusiast or a skilled contractor, our experts are on hand to offer tailored advice on product selection, project scope, and compliance with local regulations.',
+          "Need cloth in your family's colours, a motif for a wedding, or a size you can't find in the shop? Tell us what you need and our artisans will sketch the motif and dye colour samples before they start weaving.",
         imageAlts: [
-          'Blueprints and digital tablet with construction plans.',
-          'Person working in the office',
+          'Illustration of an ikat motif sketch on grid paper',
+          'Illustration of naturally dyed yarn colour samples',
         ],
       },
       craftsmanship: {
-        title: 'Transforming Designs into Reality',
+        title: 'Weaving Workshops',
         subTitle:
-          'Our skilled craftsmen bring precision and excellence to every construction project. From minor installations to substantial structural work, ScrewFast offers reliable construction services to turn your plans into tangible outcomes. We ensure the highest standards of safety and workmanship, utilizing top-quality tools and materials from our extensive inventory.',
-        imageAlts: ['Construction site before and after'],
-        cta: 'Learn More',
+          'Small classes to get to know the backstrap loom, tie an ikat motif and dye yarn with indigo. Perfect for beginners, communities and teams who want to learn by making.',
+        imageAlts: ['Illustration of a loom with warp threads set up'],
+        cta: 'See the Schedule',
       },
       oversight: {
-        title: 'Navigating Projects with Professional Oversight',
+        title: 'Boutique & Hotel Partnerships',
         subTitle:
-          'Effective project management is at the heart of any successful build. ScrewFast provides thorough planning and robust management services that keep your project on time and within budget. Let us handle the complexities of workflow coordination, resource allocation, and stakeholder communication while you focus on your vision.',
+          'We prepare cloth, cushion covers and table runners in medium runs for boutiques, cafés and guesthouses. Every order comes with an artisan story card you can share with your guests.',
         imageAlts: [
-          'Construction workers orchestrating a project',
-          'Aerial view of managed construction',
+          'Illustration of a stack of woven cushion covers',
+          'Illustration of a table runner with a woven check motif',
         ],
       },
       maintenance: {
-        title: 'Ensuring Long-lasting Performance',
+        title: 'Textile Care & Repair',
         subTitle:
-          "Our commitment to your project doesn't end at completion. ScrewFast offers ongoing maintenance and support services to ensure your construction's longevity and performance. From regular check-ups to emergency assistance, our responsive team is there to provide seamless support.",
-        imageAlts: [
-          'Man in orange and black vest wearing white helmet holding yellow and black power tool',
-        ],
+          'Pulled threads, faded colour or a fraying edge? Send your cloth to the studio and we will care for it with the same techniques used to weave it.',
+        imageAlts: ['Illustration of neatly folded cloth after care'],
       },
       bespoke: {
-        title: 'Crafting Bespoke Strategies for Unique Challenges',
+        title: 'Partner Artisan Programme',
         subTitle:
-          'For our larger enterprise clients, ScrewFast offers custom solutions designed to meet specific industry challenges. By understanding your unique needs, we engineer tailored strategies aimed at optimizing your operations, enhancing efficiency, and driving your business forward.',
+          'We work with village weaving groups through prices agreed up front, natural-dye training and long-term contracts, so that weaving remains decent, dignified work.',
         imageAlts: [
-          'In progress building structure',
-          'Brown and gray building under construction',
+          'Illustration of a lurik motif from a partner weaving group',
+          'Illustration of a songket motif from a partner weaving group',
         ],
-        cta: 'Read more',
+        cta: 'Read More',
       },
     },
     stats: {
       title: 'By the Numbers',
       subTitle:
-        'Our commitment to quality and reliability is evident in every project we undertake. At ScrewFast, we are dedicated to delivering industry-leading services that ensure your construction projects are built to last.',
-      mainStatTitle: '96%',
-      mainStatSubTitle:
-        'of our clients rate their experience with ScrewFast as exceptional',
+        'These figures are sample data that illustrate how we want to grow: slowly, measurably and together with our artisans.',
+      mainStatTitle: '92%',
+      mainStatSubTitle: 'of sample customers buy again within their first year',
       stats: [
-        { stat: '99.8%', description: 'project completion rate' },
-        { stat: '5,000+', description: 'successful installations' },
-        { stat: '85%', description: 'client growth year-over-year' },
+        { stat: '6', description: 'partner weaving villages' },
+        { stat: '8,500+', description: 'pieces woven so far' },
+        { stat: '40+', description: 'workshops held' },
       ],
     },
   },
@@ -357,93 +347,92 @@ export const en = {
   contact: {
     title: 'Contact',
     metaDescription:
-      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
-    ogTitle: 'Contact Us | ScrewFast',
+      'Questions about the collection, custom orders or workshops? Get in touch with the Tenun Lestari team.',
+    ogTitle: 'Contact Us | Tenun Lestari',
     heading: 'Contact us',
     subTitle:
-      "Have questions or want to discuss a project? Reach out, and let's craft the perfect solution with our tools and services.",
+      "Questions about the collection, custom orders or workshops? Drop us a line and we'll be happy to help.",
     formTitle: 'Fill in the form below',
-    formSubTitle: "We'll get back to you in 1-2 business days.",
+    formSubTitle: "We'll get back to you in 1–2 business days.",
     firstName: 'First Name',
     lastName: 'Last Name',
-    details: 'Details',
+    details: 'Message',
     send: 'Send Message',
     demoMessage:
       'Thanks! (Demo only — wire a form endpoint to receive real messages.)',
-    knowledgeHeading: 'Knowledgebase',
-    knowledgeContent: 'Browse through all of our knowledgebase articles.',
-    knowledgeLink: 'Visit guides & tutorials',
+    knowledgeHeading: 'Guides',
+    knowledgeContent: 'Read our fabric care guide and introduction to motifs.',
+    knowledgeLink: 'Open the guides',
     faqHeading: 'FAQ',
-    faqContent: 'Explore our FAQ for quick, clear answers to common queries.',
+    faqContent: 'Find quick answers to the questions we hear most often.',
     faqLink: 'Visit FAQ',
-    officeHeading: 'Visit our office',
-    officeContent: 'UK ScrewFast',
-    emailHeading: 'Contact us by email',
+    officeHeading: 'Visit our studio',
+    officeContent: 'Tenun Lestari Studio, Yogyakarta (sample address)',
+    emailHeading: 'Email us',
     emailContent: 'Prefer the written word? Drop us an email at',
   },
 
   blogIndex: {
-    title: 'Blog',
+    title: 'Journal',
     metaDescription:
-      "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts.",
-    ogTitle: 'Construction Industry Blog | ScrewFast',
-    heading: 'Your Gateway to Construction Excellence',
+      'Artisan stories, fabric care guides and notes on natural dyes from the Tenun Lestari Journal.',
+    ogTitle: 'Journal | Tenun Lestari',
+    heading: 'The Tenun Lestari Journal',
     subTitle:
-      'Explore the latest news, tips, and insights from ScrewFast to enhance your construction projects. From product spotlights to project management strategies, our blog is your go-to resource for all things hardware and construction.',
+      'Notes from the studio and the weaving villages: on natural dyes, caring for cloth, and the people behind every thread.',
     insightsHeading: 'Insights',
     insightsSubTitle:
-      "Stay up-to-date with the latest trends and developments in the construction industry with insights from ScrewFast's team of industry experts. ",
-    noPosts: 'No blog posts yet. Check back soon.',
+      'Longer reads on slow fashion, fair supply chains and the future of traditional weaving.',
+    noPosts: 'No journal posts yet. Check back soon.',
     noInsights: 'No insights yet. Check back soon.',
   },
 
   productsIndex: {
-    title: 'Products',
+    title: 'Collection',
     metaDescription:
-      'Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts.',
-    ogTitle: 'Hardware Tools | ScrewFast',
-    heading: 'Products',
+      'Explore Tenun Lestari handwoven fabrics, scarves and home decor, made together with local artisans.',
+    ogTitle: 'Collection | Tenun Lestari',
+    heading: 'Collection',
     subTitle:
-      'Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.',
+      'Every piece is made in small batches by our partner artisans. Colours and motifs vary slightly from piece to piece, and that is the beauty of handweaving.',
     customerStories: 'Customer Stories',
     testimonials: {
-      title: 'What Our Customers Say',
+      title: 'What Customers Say (Samples)',
       quotes: [
         {
           content:
-            ' "Since switching to ScrewFast\'s hardware tools, the efficiency on our construction sites has skyrocketed. The durability of the hex bolts and precision of the machine screws are simply unmatched. It\'s refreshing to work with a company that truly understands the daily demands of the industry." ',
-          author: 'Jason Clark',
-          role: 'Site Foreman | TopBuild',
-          avatarAlt: 'Image Description',
+            ' "The songket cushion covers became the centrepiece of our living room. The stitching is neat and the colours stayed bright after several washes." ',
+          author: 'Dewi Pramesti (sample)',
+          role: 'Fictional customer | Surabaya',
+          avatarAlt: 'Woven pattern avatar',
         },
         {
           content:
-            ' "As an interior designer, I\'m always looking for high-quality materials and tools that help bring my visions to life. ScrewFast\'s mixed screws assortment has been a game-changer for my projects, providing the perfect blend of quality and variety. The outstanding customer support was just the cherry on top!" ',
-          author: 'Maria Gonzalez',
-          role: 'Interior Designer | Creative Spaces',
-          avatarAlt: 'Image Description',
+            ' "We ordered table runners for our small café. Guests often ask where the cloth comes from, and the artisan story cards make for warmer conversations." ',
+          author: 'Bagas Wicaksono (sample)',
+          role: 'Fictional café owner | Malang',
+          avatarAlt: 'Woven pattern avatar',
         },
         {
           content:
-            " \"I've been a professional carpenter for over 15 years, and I can sincerely say that ScrewFast's tap bolts and nuts are some of the best I've used. They grip like no other, and I have full confidence in every joint and fixture. Plus, the service is impeccable – they truly care about my project's success.\" ",
-          author: 'Richard Kim',
-          role: 'Master Carpenter | WoodWright',
-          avatarAlt: 'Image Description',
+            ' "The lurik scarf is so light and comfortable in hot weather. It is lovely to know who wove it." ',
+          author: 'Laras Kinanti (sample)',
+          role: 'Fictional customer | Jakarta',
+          avatarAlt: 'Woven pattern avatar',
         },
       ],
     },
     stats: {
-      title: 'Why Choose ScrewFast?',
+      title: 'Why Tenun Lestari?',
       subTitle:
-        "Transform your ideas into tangible results with ScrewFast tools. Whether you're starting with a sketch on a napkin or diving into a comprehensive construction project, our tools are engineered to help you build with confidence.",
+        'We make less, but better. Every cloth can be traced to the village and weaving group that made it.',
       benefits: [
-        'Robust and reliable tools for long-lasting performance.',
-        'Innovative solutions tailored to modern construction needs.',
-        "Customer support dedicated to your project's success.",
+        'Natural dyes from indigo, turmeric, noni root and tree bark.',
+        'Fair prices agreed with artisans before weaving begins.',
+        'Plastic-free packaging and a lifetime repair service.',
       ],
     },
   },
 
-  /** Locale-specific JSON data (already the good pattern; kept as-is). */
   data: { faqs, features, pricing },
 };

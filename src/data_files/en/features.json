@@ -1,0 +1,22 @@
+[
+  {
+    "heading": "Local Artisans",
+    "content": "Every cloth is woven by a weaving group in one of our partner villages. We know their names, and you can read them on the label of every piece.",
+    "svg": "groups"
+  },
+  {
+    "heading": "Natural Dyes",
+    "content": "Indigo, turmeric, noni root and tree bark replace synthetic dyes. The colours are soft, age beautifully, and the run-off is safe for rivers.",
+    "svg": "sparks"
+  },
+  {
+    "heading": "Fair Prices",
+    "content": "Prices are agreed with artisans before the first thread goes on the loom, not squeezed once the cloth is finished. Contracts are long-term, not seasonal.",
+    "svg": "verified"
+  },
+  {
+    "heading": "Made to Last",
+    "content": "Dense weaves, strong edge finishing and a lifetime repair service. The best cloth is the one you never need to replace in a hurry.",
+    "svg": "frame"
+  }
+]

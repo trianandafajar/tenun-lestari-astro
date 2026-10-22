@@ -1,10 +1,11 @@
 /**
  * Marketing-site locale module.
  *
- * Owns everything the marketing pages (`src/pages/` and `src/pages/fr/`)
+ * Owns everything the marketing pages (`src/pages/` and `src/pages/en/`)
  * need to know about locales: which ones exist, how to resolve the current
  * one from a request, how to localise a path, and how to find the same page
- * in another locale. Nothing else in the codebase should parse `/fr` out of
+ * in another locale. Bahasa Indonesia (`id`) is the default locale and has no
+ * URL prefix; English lives under `/en/`. Nothing else in the codebase should parse `/en` out of
  * a pathname or hard-code a locale prefix.
  *
  * Docs (Starlight) have their own locale handling; this module is not used
@@ -13,10 +14,10 @@
  * Every function here is pure so it can be unit-tested without Astro.
  */
 
-export const MARKETING_LOCALES = ['en', 'fr'] as const;
+export const MARKETING_LOCALES = ['id', 'en'] as const;
 export type MarketingLocale = (typeof MARKETING_LOCALES)[number];
 
-export const DEFAULT_LOCALE: MarketingLocale = 'en';
+export const DEFAULT_LOCALE: MarketingLocale = 'id';
 
 /** Locales that carry a URL prefix (every locale except the default). */
 const PREFIXED_LOCALES: readonly MarketingLocale[] = MARKETING_LOCALES.filter(
@@ -39,19 +40,19 @@ export const LOCALE_INFO: Record<
     intl: string;
   }
 > = {
+  id: {
+    label: 'Bahasa Indonesia',
+    lang: 'id',
+    ogLocale: 'id_ID',
+    inLanguage: 'id-ID',
+    intl: 'id-ID',
+  },
   en: {
     label: 'English',
     lang: 'en',
     ogLocale: 'en_US',
     inLanguage: 'en-US',
     intl: 'en-US',
-  },
-  fr: {
-    label: 'Français',
-    lang: 'fr',
-    ogLocale: 'fr_FR',
-    inLanguage: 'fr',
-    intl: 'fr-FR',
   },
 };
 
@@ -66,9 +67,9 @@ export function isMarketingLocale(value: unknown): value is MarketingLocale {
  * Split a pathname into the locale it is prefixed with and the rest of the
  * path. The default locale has no prefix.
  *
- *   '/fr/blog/post-1/' -> { locale: 'fr', path: '/blog/post-1/' }
- *   '/fr'              -> { locale: 'fr', path: '/' }
- *   '/blog/'           -> { locale: 'en', path: '/blog/' }
+ *   '/en/blog/post-1/' -> { locale: 'en', path: '/blog/post-1/' }
+ *   '/en'              -> { locale: 'en', path: '/' }
+ *   '/blog/'           -> { locale: 'id', path: '/blog/' }
  */
 export function splitLocale(pathname: string): {
   locale: MarketingLocale;
@@ -86,27 +87,22 @@ export function splitLocale(pathname: string): {
 }
 
 /**
- * Resolve the locale of the current request. The pathname is authoritative
- * for marketing pages; `Astro.currentLocale` (driven by Starlight's i18n
- * config) is only a fallback.
+ * Resolve the locale of the current request. The pathname is the single
+ * source of truth: unprefixed paths are Bahasa Indonesia, `/en/…` is English.
+ * (`Astro.currentLocale` follows Starlight's docs locales, whose default
+ * differs from the marketing default, so it is deliberately not consulted.)
  */
-export function resolveLocale(
-  pathname: string,
-  currentLocale?: string | undefined
-): MarketingLocale {
-  const { locale } = splitLocale(pathname);
-  if (locale !== DEFAULT_LOCALE) return locale;
-  if (isMarketingLocale(currentLocale)) return currentLocale;
-  return DEFAULT_LOCALE;
+export function resolveLocale(pathname: string): MarketingLocale {
+  return splitLocale(pathname).locale;
 }
 
 /**
  * Build a site-relative path for a locale.
  *
- *   localePath('fr', '/products')  -> '/fr/products'
- *   localePath('en', '/products')  -> '/products'
- *   localePath('fr')               -> '/fr'
- *   localePath('fr', '#')          -> '#'   (fragments and absolute URLs pass through)
+ *   localePath('en', '/products')  -> '/en/products'
+ *   localePath('id', '/products')  -> '/products'
+ *   localePath('en')               -> '/en'
+ *   localePath('en', '#')          -> '#'   (fragments and absolute URLs pass through)
  */
 export function localePath(locale: MarketingLocale, path = '/'): string {
   if (path.startsWith('#') || /^[a-z]+:/i.test(path)) return path;

@@ -1,0 +1,38 @@
+{
+  "title": "Weaving Workshops",
+  "subTitle": "Learn directly from artisans in our studio. Small groups, materials included, and you take home something you made yourself.",
+  "badge": "Most popular",
+  "thirdOption": "Want a private class for your team or community?",
+  "btnText": "Get in Touch",
+
+  "starterKit": {
+    "name": "Introductory Class",
+    "description": "One day with the loom and indigo dye",
+    "price": "350",
+    "cents": ",000",
+    "billingFrequency": "IDR / participant",
+    "features": [
+      "4-hour session with an artisan",
+      "Dye yarn with indigo",
+      "Take home a woven handkerchief"
+    ],
+    "purchaseBtnTitle": "Join the Introductory Class",
+    "purchaseLink": "#"
+  },
+
+  "professionalToolbox": {
+    "name": "Intensive Class",
+    "description": "Three days from tying a motif to weaving",
+    "price": "1,250",
+    "cents": ",000",
+    "billingFrequency": "IDR / participant",
+    "features": [
+      "Tie your own ikat motif",
+      "Natural dyeing with three materials",
+      "Weave a small shawl",
+      "Lunch and a printed guide"
+    ],
+    "purchaseBtnTitle": "Join the Intensive Class",
+    "purchaseLink": "#"
+  }
+}

@@ -51,7 +51,7 @@ export function slugOf(entry: LocalisedEntry): string {
   return entry.id.replace(/^[^/]+\//, '');
 }
 
-/** Site-relative path of an entry's page, e.g. `/fr/blog/post-1/`. */
+/** Site-relative path of an entry's page, e.g. `/en/blog/post-1/`. */
 export function pathFor(entry: LocalisedEntry): string {
   return `${localePath(localeOf(entry), ROUTES[entry.collection])}/${slugOf(entry)}/`;
 }

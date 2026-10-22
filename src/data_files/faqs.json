@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Hal-hal yang paling sering ditanyakan tentang kain, pengiriman, dan cara kami bekerja bersama pengrajin.",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "Apakah warna setiap kain akan sama persis dengan fotonya?",
+      "answer": "Tidak selalu, dan itu disengaja. Pewarna alami dan tenun tangan membuat setiap helai sedikit berbeda dalam rona maupun motif. Kami memotret setiap kelompok produksi agar perbedaannya tetap wajar."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "Bagaimana cara mencuci kain tenun dengan pewarna alami?",
+      "answer": "Cuci dengan tangan menggunakan air dingin dan sabun lembut tanpa pemutih, jangan diperas keras, lalu keringkan di tempat teduh. Panduan lengkapnya ada di halaman Panduan Perawatan."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "Berapa lama proses pesanan khusus?",
+      "answer": "Umumnya 4–8 minggu, tergantung ukuran dan kerumitan motif. Kami akan mengirimkan sketsa motif dan contoh warna untuk disetujui sebelum pengrajin mulai menenun."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Apakah Tenun Lestari mengirim ke luar negeri?",
+      "answer": "Saat ini kami mengirim ke seluruh Indonesia dan beberapa negara Asia Tenggara. Biaya dan estimasi waktu pengiriman akan tampil sebelum pembayaran (fitur toko belum aktif dalam demo ini)."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "Bagaimana kami tahu pengrajin dibayar dengan adil?",
+      "answer": "Harga per lembar disepakati bersama kelompok tenun sebelum produksi dan sebagian dibayar di muka. Kami menerbitkan ringkasan tahunan tentang harga, volume, dan program pelatihan (konten contoh untuk demo ini)."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Bisakah kain yang rusak diperbaiki?",
+      "answer": "Bisa. Kirimkan kain Tenun Lestari Anda ke studio kami; benang yang tertarik, tepi yang terurai, atau noda ringan akan ditangani oleh pengrajin yang memahami teknik tenunnya."
     }
   ]
 }
